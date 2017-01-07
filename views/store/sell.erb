@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sold!</title>
+  <link rel="stylesheet" type="text/css" href="/create.css">
+</head>
+<body>
+  <div class = "container">
+    <p><%=@product.sell(params[:quantity])%></p>
+    <p>TRANSACTION VALUE: £<%=params[:quantity].to_i * @product.price%></p>
+  </div>
+</body>
+</html>
+

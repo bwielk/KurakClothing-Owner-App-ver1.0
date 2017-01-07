@@ -1,0 +1,137 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Francois One;
+  overflow-x: hidden;
+}
+#container {
+  width: 960px;
+  margin: 0px auto;
+}
+#container p {
+  display: block;
+}
+
+body {
+  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/5ca63234338995.56ccfd2103ab4.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  min-width: 375px;
+  max-width: 1024px;
+  min-height: 667px;
+  max-height: 1366px;
+  background-attachment: fixed;
+}
+.nav img {
+  float: left;
+  width: 94px;
+  height: 80px;
+}
+.nav ul li {
+
+  list-style: none;
+  display: inline-block;
+  margin: 3% 5% 0% 6%;
+  text-align: center;
+  float: right;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-family: Francois One;
+  text-align: center;
+  font-size: 150%;
+}
+
+.nav a:hover {
+  color: grey;
+}
+
+.nav {
+ background-color: black;
+ height: 80px;
+ margin-top: -2%;
+ border-radius: 1%;
+ display: content;
+}
+@media screen and (max-width:959px) {
+  #container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #container {
+    width: 100%;
+  }
+  .nav {
+    max-width: 768px;
+    width: 100%;
+    min-height: 80px;
+    height:100%;
+    margin-top: -3%;
+    border-radius: 1%;
+  }
+  .nav ul li {
+    margin: 4% 3.5%;
+  }
+  .nav a {
+    font-size: 130%;
+  }
+}
+@media only screen and (max-width: 414px){
+
+  #container {
+    max-width: 414px;
+    width:100%;
+    margin:0;
+  }
+  .nav ul li {
+   margin: 7% 2.05%;
+ }
+ .nav a {
+   font-size: 110%;
+ }
+
+ .nav {
+  min-height: 80px;
+  height: 100%;
+  max-width: 414px;
+  width: 100%;
+  margin-top: -4%;
+}
+
+.nav img:nth-child(n+2){
+  display: none;
+}
+
+}
+@media only screen and (max-width: 375px) {
+
+  #container {
+    max-height: 667px;
+    height: 100%;
+    max-width: 375px;
+    width: 100%;
+    margin: 0;
+  }
+  .nav ul li {
+    display: inline;
+    margin: 9% 1.5%;
+  }
+  .nav a {
+    font-size: 100%;
+  }
+
+  .nav {
+   background-color: black;
+   min-height: 80px;
+   height: 100%;
+   max-width: 375px;
+   width:100%;
+   margin-top: -4%;
+ }
+ .nav img:nth-child(n+2){
+   display: none;
+ }
+}

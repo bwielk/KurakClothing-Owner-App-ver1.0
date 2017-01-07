@@ -1,0 +1,11 @@
+.container {
+  margin-top: 3%;
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 1% 0%;
+}
+p.container{
+  margin: auto;
+  padding: 9% 0%;
+}

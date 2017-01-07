@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/new_edit.css">
+  <title>Create a product</title>
+</head>
+<body>
+  <div class = "form">
+  <form action = "/store/new_product" method = "post">
+      <label><p>Product name:</p>
+        <input type = "text" name = "name" size = "30">
+      </label>
+      <label><p>Type: </p>
+        <input type = "text" name = "type" size = "30">
+      </label>
+      <label> <p>Price:  </p>
+        <input type = "number" name = "price" size = 10>
+      </label>
+      <label> <p>Stock: </p>
+        <input type = "number" name = "stock" size = 10>
+      </label>
+      <label> <p>Image URL: </p>
+        <input type = "text" name = "url" size = 50>
+      </label>
+      <label> <p>Collection: </p>
+        <p><select name = "collection_id">
+          <%for collection in @collections%> 
+          <option value= <%=collection.id%>><%=collection.name%></option>
+          <%end%>
+        </select>
+      </label>
+      <p><input class = "button" type = "submit" value = "CREATE"></p>
+    </label>
+    
+    
+  </form>
+</div>
+</body>
+</html>

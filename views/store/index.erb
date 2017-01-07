@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/index.css">
+  <title>Inventory</title>
+</head>
+<body>
+  <form action = '/collection/collection_id/season' method = "get">
+    <label class = "dropdown"> <p>Choose a collection:</p>
+      <select name = "collection_id">
+        <%for collection in @collections%> 
+        <option value=<%=collection.id%>><%=collection.name%></option>
+        <%end%> 
+      </select>
+    </label>
+    <p><input type = "submit" value = "GO"></p>
+  </form>
+  <form class = "form" action = '/collection' method = "post">
+    <label>
+      <div>
+        <p>Name a new collection:</p>
+        <p><input id = "input_bar" type = "text" name = "name"> </input></p>
+        <p><input type = "submit" value = "CREATE"><p>
+      </div>
+    </label>
+  </form>
+ <form action = '/collection/id/delete' method = "post">
+     <label class = "dropdown"> <p>Delete a collection:</p>
+       <select name = "id">
+         <%for collection in @collections%> 
+         <option value=<%=collection.id%>><%=collection.name%></option>
+         <%end%> 
+       </select>
+     </label>
+     <p><input type = "submit" value = "DELETE"></p>
+   </form>
+</body>
+</html>

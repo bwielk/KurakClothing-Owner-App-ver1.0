@@ -1,0 +1,90 @@
+body {
+  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/d8969d34338995.56ccfd2105c9c.jpg);
+}
+
+.dropdown p {
+ text-align: center;
+ font-size: 200%;
+}
+
+.dropdown select {
+  font-size: 120%;
+  font-family: Francois One;
+  width: 30%;
+  border-radius: none;
+  margin: 0% 35% 0% 35%;
+  background-color: white;
+}
+
+input {
+  width: 20%;
+  background-color: black;
+  font-family: Francois One;
+  margin: 0% 40%;
+  border: none;
+  padding: 1%;
+  color:white;
+  font-size: 140%;
+}
+
+.form {
+  width: 260px;
+  margin: auto;
+  padding: 1%;
+  margin-top: 5%;
+  ;
+}
+.form input {
+  padding: 0;
+  width: 80%;
+  margin: 0% 10% 0% 10%;
+  font-size: 120%;
+  font-family: Francois One;
+}
+
+.form p {
+  color:black;
+  text-align: center;
+  padding: 0;
+  font-size: 120%;
+  margin: 0;
+}
+
+#input_bar {
+  background-color:white;
+  color:black;
+  font-size: 150%;
+  margin: 4%;
+  border: 1px solid black;
+  border-radius: 0.1em;
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+@media only screen and (max-width: 414px){
+
+  .dropdown select {
+    font-size: 120%;
+    width: 70%;
+    margin: 15% 0% 15% 0%;
+  }
+
+  .form {
+    width: 260px;
+    margin: auto;
+    padding: 1%;
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 375px){
+  
+  .dropdown select {
+    font-size: 110%;
+    width: 30%;
+    border-radius: none;
+    margin: 0% 35% 0% 35%;
+  }
+}
