@@ -17,10 +17,17 @@ body {
   background-repeat: no-repeat;
   background-size:cover;
   min-width: 375px;
-  max-width: 1024px;
+  /*max-width: 1024px;*/
   min-height: 667px;
-  max-height: 1366px;
+  /*max-height: 1366px;*/
   background-attachment: fixed;
+
+ /* background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/5ca63234338995.56ccfd2103ab4.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  min-width: 500px;
+  min-height: 1024px;
+  background-attachment: fixed;*/
 }
 .nav img {
   float: left;

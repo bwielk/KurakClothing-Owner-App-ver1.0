@@ -19,17 +19,19 @@ get '/store/new' do
   @collections = Collection.all
   erb(:"/store/new")
 end
+#ERROR 
+# get '/store/error'
+# erb(:"/store/error")
 
 #NEW PRODUCT CREATED
 post '/store/new_product' do 
   @product = Product.new(params)
-  # if params.empty?
-  #   redirect to('/fw2015/error') 
-  # else
+  # if params.length == 0
+  #    redirect to('/store/error') 
+  #  else
   @product.add()
-  # end
+  #end
   erb(:"/store/create")
-  # erb(:"/fw2015/error")
 end
 
 #SHOW PRODUCT
