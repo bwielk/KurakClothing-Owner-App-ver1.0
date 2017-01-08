@@ -6,8 +6,12 @@
 </head>
 <body>
   <div class = "container">
+    <%if params[:quantity].to_i <= @product.stock%>
     <p><%=@product.sell(params[:quantity])%></p>
     <p>TRANSACTION VALUE: £<%=params[:quantity].to_i * @product.price%></p>
+    <%else%>
+    <p>NOT ENOUGH ITEMS IN STOCK! ORDER MORE</p>
+    <%end%>
   </div>
 </body>
 </html>

@@ -5,7 +5,13 @@
   text-align: center;
   padding: 1% 0%;
 }
-p.container{
+.container p{
   margin: auto;
   padding: 9% 0%;
+}
+
+.container p > a{
+  color: white;
+  text-align: center;
+  text-decoration: none;
 }

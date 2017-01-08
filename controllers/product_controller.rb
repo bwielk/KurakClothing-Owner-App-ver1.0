@@ -26,12 +26,16 @@ end
 #NEW PRODUCT CREATED
 post '/store/new_product' do 
   @product = Product.new(params)
-  # if params.length == 0
-  #    redirect to('/store/error') 
-  #  else
-  @product.add()
-  #end
-  erb(:"/store/create")
+   if params[:name].length == 0 ||
+      params[:type].length == 0 ||
+      params[:price].length == 0 ||
+      params[:stock].length == 0 ||
+      params[:url].length == 0
+      erb(:"/store/error") 
+   else
+      @product.add()
+      erb(:"/store/create")
+  end 
 end
 
 #SHOW PRODUCT
