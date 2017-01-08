@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delete a collection</title>
+  <link rel="stylesheet" type="text/css" href="/create.css">
+</head>
+<body>
+  <div class = "container">
+  <p>Are you sure you'd like to delete <%=@collection.name%> collection?</p>
+    <div>
+    <form action = '/collection/<%=@collection.id%>/delete' method = "post">
+    <p><input type = "submit" value = "YES"></p>
+    </form>
+    <div>
+    <form action = '/store' method = "get">
+    <p><input type = "submit" value = "NO"></div></p>
+    </form>
+    </div>
+  </div>
+</body>
+</html>

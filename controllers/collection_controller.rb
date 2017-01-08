@@ -19,8 +19,14 @@ post '/collection' do
   erb(:"/store/create_new_col")
 end
 
+#DESTROY A COLLECTION FORM
+get '/collection/id/delete' do
+  @collection = Collection.find(params[:id])
+  erb(:"/store/destroy_col")
+end
+
 #DESTROY A COLLECTION
-post '/collection/id/delete' do
+post '/collection/:id/delete' do
   Collection.delete(params[:id])
-  redirect to('/store')
+  redirect to ('/store')
 end

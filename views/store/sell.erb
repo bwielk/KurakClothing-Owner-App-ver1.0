@@ -10,7 +10,7 @@
     <p><%=@product.sell(params[:quantity])%></p>
     <p>TRANSACTION VALUE: £<%=params[:quantity].to_i * @product.price%></p>
     <%else%>
-    <p>NOT ENOUGH ITEMS IN STOCK! ORDER MORE</p>
+    <p>NOT ENOUGH ITEMS IN STOCK!</p>
     <%end%>
   </div>
 </body>
