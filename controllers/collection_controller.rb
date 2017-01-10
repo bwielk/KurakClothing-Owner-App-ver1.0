@@ -20,13 +20,13 @@ post '/collection' do
 end
 
 #DESTROY A COLLECTION FORM
-get '/collection/id/delete' do
+get '/collection/id/delete' do # id in the form !!!
   @collection = Collection.find(params[:id])
   erb(:"/store/destroy_col")
 end
 
 #DESTROY A COLLECTION
-post '/collection/:id/delete' do
+post '/collection/:id/delete' do # id here!!!
   Collection.delete(params[:id])
   redirect to ('/store')
 end
